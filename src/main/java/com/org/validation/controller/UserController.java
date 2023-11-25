@@ -52,7 +52,10 @@ public class UserController {
 	public String login(@RequestBody User user) {
 		String login = userService.login(user);
 		System.out.println(login);
-		System.out.println("similar changes");
+
+		System.out.println(login);
+
+
 		return login;
 	}
 
