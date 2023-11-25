@@ -51,6 +51,7 @@ public class UserController {
 	@PostMapping(value = "/login")
 	public String login(@RequestBody User user) {
 		String login = userService.login(user);
+		System.out.println(login);
 		return login;
 	}
 
